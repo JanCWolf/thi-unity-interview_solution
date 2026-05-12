@@ -1,5 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2202279624934786629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4153496a41408e645bd9fb6d62bea918, type: 3}
+  m_Name: OutlineEffectRenderFeature
+  m_EditorClassIdentifier: Assembly-CSharp::OutlineEffectRenderFeature
+  m_Active: 1
+  settings:
+    outlineColor: {r: 0, g: 0, b: 0, a: 1}
+    thickness: 1
+    depthThreshold: 0.8
+    normalThreshold: 0.4
+    renderPassEvent: 550
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27,7 +46,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 7833122117494664109}
   - {fileID: 553036433073057343}
-  m_RendererFeatureMap: ad6b866f10d7b46c3f2e2badb4c7ac07
+  - {fileID: -2202279624934786629}
+  m_RendererFeatureMap: ad6b866f10d7b46c3f2e2badb4c7ac07bb79ae6b59ee6fe1
   m_UseNativeRenderPass: 1
   xrSystemData: {fileID: 0}
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
@@ -68,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e64660adc1eb460ea0234a1ea821a11, type: 3}
   m_Name: OutlineFeature
   m_EditorClassIdentifier: Assembly-CSharp::OutlineFeature
-  m_Active: 1
+  m_Active: 0
   settings:
     outlineColor: {r: 0, g: 0, b: 0, a: 1}
     thickness: 2.96
